@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "2b56efe9-f625-4726-b13f-62ddc69bf676",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38291983"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/libros/registrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"El Alquimista\",\r\n    \"autor\": \"Paulo Coelho\",\r\n    \"precio\": 29.90\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/libros/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"libros",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/libros/actualizar/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"El Alquimista - Edición Especial\",\r\n    \"autor\": \"Paulo Coelho\",\r\n    \"precio\": 35.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/libros/actualizar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"libros",
+						"actualizar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
